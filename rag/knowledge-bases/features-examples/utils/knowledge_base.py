@@ -727,6 +727,14 @@ class BedrockKnowledgeBase:
                         "method": {
                             "name": "hnsw",
                             "engine": "faiss",
+                            "parameters": {
+                                "encoder": {
+                                    "name": "sq",
+                                    "parameters": {
+                                        "type": "fp16",
+                                        "clip": True
+                                    }
+                            }},
                             "space_type": "l2"
                         },
                     },
